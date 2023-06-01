@@ -1,0 +1,52 @@
+main {
+    margin-left: 22%;
+    /* margin-top: 7%; */
+    margin-bottom: 7%;
+    width: 70%;
+}
+
+#page_container .page_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page_container .page_header h1 {
+    font-size: 40px;
+}
+
+#page_container .page_header .new_add_button {
+    border-radius: 4px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.page_list_content {
+    padding: 0;
+    margin: 0;
+}
+
+.element_of_list {
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+[class="fas fa-edit"] {
+    color: blue;
+    font-size: 20px;
+}
+
+.faq_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content_faq {
+    margin-top: 0;
+}

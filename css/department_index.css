@@ -1,0 +1,205 @@
+main {
+    margin-left: 22%;
+    /* margin-top: 7%; */
+    margin-bottom: 7%;
+    width: 70%;
+}
+
+#page_container .page_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page_container .page_header h1 {
+    font-size: 40px;
+}
+
+#page_container .page_header .new_add_button {
+    border-radius: 4px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.page_content {
+    margin-top: 20px;
+}
+
+.department_description {
+    margin-top: 2em;
+    line-height: 25px;
+    margin-bottom: 2em;
+}
+
+[class="fas fa-edit"] {
+    color: blue;
+    font-size: 15px;
+    padding-left: 0.5em;
+}
+
+.agent_info {
+    display: flex;
+    align-items: center;
+}
+
+.agent_info .pfp {
+    width: 2em;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.page_content, .page_content_department, .page_content_department {
+    height: 32em;
+}
+
+.page_content, .page_content_department {
+    height: 60vh;
+    background-color: #ABCDEF;
+    overflow: scroll;
+}
+
+.page_list_content {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.element_of_list {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    order: 4;
+}
+
+.element_of_list a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.element_of_list a span {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.element_of_list a span:last-of-type {
+    border-right: none;
+}
+
+.element_of_list [class="far fa-star"], .element_of_list [class="fa-solid fa-star"] {
+    color: rgb(211, 211, 0);
+    margin-left: 1em;
+} 
+
+.element_of_list.tracking {
+    order: 3;
+}
+
+.element_of_list.pending.tracking {
+    order: 1;
+}
+
+.page_list_content .element_of_list {
+    padding: 20px 10px 20px 10px;
+}
+
+.element_of_list:hover {
+    background-color: #ccc;
+}
+
+.element_of_list:hover a {
+    color: mediumblue;
+}
+
+.element_of_list:hover [class="far fa-star"], .element_of_list:hover [class="fa-solid fa-star"] {
+    color: yellow;
+    cursor: pointer;
+}
+
+#filter_page, #filter_page_department.open {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#filter_page select, #filter_page_department.open select, #filter_page input {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+#filter_page select:hover,
+#filter_page select:focus,
+#filter_page_department.open select:hover,
+#filter_page_department.open select:focus
+{
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#filter_page input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+#filter_page_department {
+    display: none;
+}
+
+#select_option {
+    padding-top: 20px;
+    font-size: 0;
+}
+
+#select_option button {
+    border: 1px solid #ccc;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 1em;
+    padding: 10px 25px 10px 25px;
+    font-size: 14px;
+}
+
+#select_option button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.filter.hide {
+    display: none;
+}
+
+.my_tickets.click, .agents_button.click {
+    background-color: #a9a9a9;
+}
+
+.element_of_list.new_ticket, .element_of_list.pending {
+    animation: blink 1s infinite;
+    order: 2;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #a9a9a9;
+    }
+    50% {
+      background-color: #f1f1f1;
+    }
+    100% {
+        background-color: #a9a9a9;  
+    }
+}

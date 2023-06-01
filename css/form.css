@@ -1,0 +1,136 @@
+main {
+    margin-left: 22%;
+    /* margin-top: 7%; */
+    margin-bottom: 7%;
+    width: 70%;
+}
+
+#page_container .page_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+#page_container .ticket_page_header {
+    display: flex;
+    flex-direction: column;
+}
+
+#page_container .page_header h1 {
+    font-size: 40px;
+}
+
+#page_container .page_header .header_info, #page_container .ticket_page_header .header_info {
+    display: flex;
+    flex-direction: row;
+}
+
+#page_container .page_header .header_info h2:first-child,
+#page_container .ticket_page_header .header_info h2:first-child 
+{
+    padding-right: 1em;
+}
+
+#page_container .page_header .header_info h2:last-child,
+#page_container .ticket_page_header .header_info h2:last-child
+{
+    padding-left: 1em;
+    border-left: 2px solid black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.form input, .form textarea, .form select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    height: 2em;
+}
+
+.form input:focus, .form textarea:focus, .form select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.form input[type="submit"] {
+    margin-top: 15px;
+    height: 2em;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.form textarea {
+    height: 20em;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* SPECIFIC CSS FOR PROFILE */
+
+.profile_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+  
+.profile_image {
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile_header_info {
+    margin-left: 1em;
+    margin-right: auto;
+}
+  
+.profile_header_info h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*
+.form label[for="role"], .form input#role {
+}
+*/
+/* SPECIFIC FOR EDIT_FAQ */
+
+.delete_form input {
+    border-radius: 4px;
+    border: none;
+    background-color: #721515;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    text-decoration: none;
+}
+
+
+.delete_form input:hover {
+    background-color: #541111;
+}
+
+/* SPECIFIC FOR EDIT_DEPARTMENT */
+
+.add_content form:nth-child(2) {
+    margin-top: 2em;
+    border-top: 2px black dashed;
+    padding-top: 1em;
+}

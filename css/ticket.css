@@ -1,0 +1,143 @@
+main {
+    margin-left: 22%;
+    /* margin-top: 7%; */
+    margin-bottom: 7%;
+    width: 70%;
+}
+
+#page_container .ticket_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page_container .ticket_header h1 {
+    font-size: 40px;
+    max-width: 90%;
+}
+
+#page_container .ticket_status {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+#page_container .ticket_header .header_buttons {
+    display: flex;
+}
+
+#page_container .ticket_header .header_buttons .new_add_button:first-child {
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+#page_container .ticket_header .new_add_button {
+    border-radius: 4px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.ticket_header h2 {
+    margin-right: auto;
+    padding-left: 1em;
+}
+
+.ticket_content {
+    line-height: 25px;
+}
+
+.ticket_author, .comment_author {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+.page_comment_section {
+    margin-top: 3em;
+}
+
+.comment_section_title {
+    font-size: 30px;
+}
+
+.comment, .change {
+    line-height: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 1em;
+    border-bottom: 2px dashed black;
+}
+
+.comment:first-of-type, .change:first-of-type {
+    margin-top: 3em;
+}
+
+.add_comment .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add_comment .form label {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+}
+
+.add_comment .form textarea {
+    height: 10em;
+}
+
+.add_comment .form input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    height: 2em;
+}
+
+.add_comment .form input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.add_comment .form input[type="submit"] {
+    margin-top: 15px;
+    height: 2em;
+}
+
+.add_comment .form input[type="submit"]:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* SPECIFIC FOR TICKET_CHANGES */
+
+#page_container .page_header {
+    display: flex;
+    flex-direction: column;
+}
+
+#page_container .page_header h1:first-child {
+    font-size: 40px;
+}
+
+#page_container .page_header h1:last-of-type {
+    margin-top: 0.5em;
+}
+
+#page_container .page_header h1:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.hashtag_container .hashtag {
+    color: lightslategrey;
+    padding-right: 0.5em;
+}
+
+.hashtag_container {
+    margin-bottom: 3em;
+}
+
+

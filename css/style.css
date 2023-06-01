@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+    margin: 0 auto;
+    background-color: rgb(226, 236, 255); 
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0463CA;
+    color: rgb(226, 236, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.header_logo {
+    width: 15%;
+}
+
+.header_img_logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1em;
+}
+
+.header_user .loginSignup{
+    text-decoration: none;
+    color: black;
+}
+
+.header_user .loginSignup:first-of-type {
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 2px solid black;
+}
+
+.header_username {
+    font-size: 20px;
+}
+
+.header_pfp {
+    margin-left: 1em;
+    width: 3em;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+
+/* aside */
+
+.sidebar {
+    background-color: bisque;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    height: 90%;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+}
+
+.sidebar_list li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.sidebar_list li {
+    color: black;
+    list-style-type: none;
+    padding: 20px 10px 20px 10px;
+}
+
+.sidebar li:hover {
+    background-color: #ccc;
+}
+
+.sidebar li:hover a {
+    color: mediumblue;
+}
+
+.sidebar_list {
+    padding: 0;
+    margin: 0;
+}
+
+/* footer */
+
+.footer {
+    position: fixed;
+    background-color: rgb(184, 184, 184);
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    box-sizing: content-box;
+    height: 3em;
+}
+
+
+#messages {
+    margin-left: 22%;
+    margin-top: 7%;
+    width: 70%;
+    
+}
+
+#messages article {
+    margin: 1em 0;
+    padding: 1em;
+    text-align: center;
+
+}
+
+#messages article.success {
+    background-color: #DFF2BF;
+}
+
+#messages article.warning {
+    background-color: #FEEFB3;
+}
+
+#messages article.error {
+    background-color: #FFD2D2;
+}
+
+#messages article.info {
+    background-color: #BDE5F8;
+}
